@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOOT</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <!-- <br><br><br> -->
+
+
+<% if params[:controller] == 'home' %>
+  <%= render 'partials/jumbotron' %> <!-- this is in question..... jumbotron... layouts -->
+<% end %>
+
+<!-- Home#index
+Find me in app/views/home/index.html.erb     and About button -->
+<div class="container">
+  <%= yield %>
+</div>
+
+
+<div class="container">
+  <%= render 'partials/footer' %> <!-- layouts -->
+</div>
+
+
+</body>
+</html>
+
+
