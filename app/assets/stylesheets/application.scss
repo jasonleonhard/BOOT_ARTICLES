@@ -5,6 +5,25 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+// Optional themes, choose one: http://bootswatch.com/slate/
+@import "slate"; // fav
+//@import "superhero"; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+//@import ""; 
+// http://startbootstrap.com/template-categories/all/ (not just css, also html and more)
+// or use https://github.com/thoughtbot/suspenders
+
 
 @import "about";
 @import "home";
