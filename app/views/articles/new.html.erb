@@ -1,16 +1,25 @@
-<%= form_for :article, url: articles_path do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
- 
-  <p>
-    <%= f.submit %> <!-- needs NoMethodError in ArticlesController#create -->
-  </p>
-<% end %>
-<%= link_to 'Back', articles_path %>
+<div class="jumbotron">  
+  <div class="container">
+
+    <%= form_for :article, url: articles_path do |f| %>
+      <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+      </p>
+     
+      <p>
+        <%= f.label :text %><br>
+        <%= f.text_area :text %>
+      </p>
+     
+      <p>
+      
+      <!-- needs NoMethodError in ArticlesController#create -->  
+      <%= f.submit %>
+      </p>
+    <% end %>
+
+  </div>
+</div>
+
+<table><tr><td class="btn btn-default"> <%= link_to 'Back', articles_path %> </td></tr></table>

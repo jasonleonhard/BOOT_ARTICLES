@@ -38,24 +38,17 @@
           <input type="password" placeholder="Password" class="form-control">
         </div>
         <button type="submit" class="btn btn-success">Sign in</button>
-      </form>
-      <ul class="nav navbar-nav"> <!-- this is the proper nav bar but replaced by the dropdown -->
-        <!-- <li>< % = link_to "Home", root_path % ></li>  -->
-        <li><%= link_to "About", about_path %></li>
-        <li>
-          <!-- This whole section required for a bootstrap dropdown menu -->
-          <div class="dropdown btn btn-right" style="background:black color:grey">
-            <button class="btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
-            <!--   <span class="caret"></span> no need for caret -->
-            </button>
-            <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-              <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "About", about_path %></li>
-              <li><%= link_to "Article", articles_path %></li>  <!-- bundle exec rake routes if rake error -->
-            </ul>
-          </div>
-        </li> <!-- This whole section required for a bootstrap dropdown menu, except the li -->
-      </ul>
+        <!-- This whole section required for a bootstrap dropdown menu -->        
+        <li class="btn btn-default" id="dLabel" type="button" data-toggle="dropdown">Menu</li> <!-- change color by removing btn-default -->
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Article", articles_path %></li>  <!-- bundle exec rake routes if rake error -->
+          </ul>
+           <!-- This whole section required for a bootstrap dropdown menu, except the li -->
+        </li>
+
+      </form>   
       
       </div><!--/.navbar-collapse -->
     </nav>
@@ -64,7 +57,7 @@
       <div class="container">
         <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
     <div class="container">
@@ -73,17 +66,17 @@
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="/" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="/" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="/" role="button">View details &raquo;</a></p>
         </div>
       </div>
       </div> <!-- /container -->

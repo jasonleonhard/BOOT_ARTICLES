@@ -1,17 +1,3 @@
-<!-- <p>
-  <strong>Title:</strong>
-  < % = @article.title % >
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  < % = @article.text % >
-</p>
-
-< % = link_to 'Back', articles_path % >
-< % = link_to 'New', new_article_path % >
- -->
-
 <div class="jumbotron">  
   <div class="container">
     <h1>New article</h1>
@@ -31,15 +17,11 @@
       <tr>
         <td class="btn btn-default"> <%= link_to 'Back', articles_path %> </td>
         <td class="btn btn-default"> <%= link_to 'New', new_article_path %> </td>
+        <!-- or -->
+        <td class="btn btn-default" href="#" role="button"> <%= link_to 'Back', articles_path %> </td>
+        <td class="btn btn-default" href="#" role="button"> <%= link_to 'New', new_article_path %> </td>
       </tr>
     </table>
 
   </div>
 </div>
-
-        
-<!-- bootstrap way of button styling and routing -->
-  <!-- <p><a class="btn btn-default" href="/articles/new" role="button"> New </a></p> -->
-<!-- OR bootstrap way of button styling but rails routing-->
-  <!-- <table><tr><td class="btn btn-default">< % = link_to 'New', new_article_path % > </td></tr></table> -->
-<!-- < % = link_to 'edit', edit_article_path % > -->
